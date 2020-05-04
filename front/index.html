@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mad Skillz</title>
+  </head>
+  <body>
+    <p id="error" class="hide"></p>
+    <div id="wrapper" class="hide">
+      <img id="despair" class="despair" />
+      <img src="" id="view" />
+    </div>
+    <form id="settings" class="hide">
+      <div class="control">
+        <label for="func">func</label>
+        <select id="func" name="func">
+          <option value="schaffer">schaffer</option>
+          <option value="eggbox">eggbox</option>
+          <option value="sinc">sinc</option>
+          <option value="moguls">moguls</option>
+          <option value="saddle">saddle</option>
+        </select>
+      </div>
+      <div class="control">
+        <label for="lowest">lowest</label>
+        <input id="lowest" name="lowest" type="color" value="#0000ff" />
+      </div>
+      <div class="control">
+        <label for="highest">highest</label>
+        <input id="highest" name="highest" type="color" value="#ff0000" />
+      </div>
+      <div class="control">
+        <label for="background">background</label>
+        <input id="background" name="background" type="color" value="#8a2be2" />
+      </div>
+      <div class="control">
+        <label for="cells">cells</label>
+        <input
+          id="cells"
+          name="cells"
+          type="range"
+          min="10"
+          max="200"
+          value="100"
+          oninput="cellsval.value=cells.value"
+        />
+        <output name="cellsval" for="cells">100</output>
+      </div>
+      <div class="control">
+        <label for="xyrange">xyrange</label>
+        <input
+          id="xyrange"
+          name="xyrange"
+          type="range"
+          min="10"
+          max="80"
+          value="30"
+          oninput="xyrangeval.value=xyrange.value"
+        />
+        <output name="xyrangeval" for="cells">30</output>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
