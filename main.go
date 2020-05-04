@@ -259,6 +259,5 @@ func f4(x, y float64) float64 {
 
 // saddle
 func f5(x, y float64) float64 {
-	r := x*x - y*y
-	return r
+	return x*x - y*y // WARNING: nope, it is not working!
 }
